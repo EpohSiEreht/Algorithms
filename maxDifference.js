@@ -2,18 +2,18 @@
 // You cannot use a lower index value to subtract from a higher index value.
 // You cannot subtract two values with the same index.
 
-function getMaxDifference(list) {
-	if (list.length < 2) {
+function getMaxDifference(arrayList) {
+	if (arrayList.length < 2) {
 		throw new Error('Requires at least 2 values to find largest difference');
 	}
 	// Initalize minValue & maxDifference so that they can be updated outside of the for loop.
-	var minValue = list[0],
-		maxDifference = list[1] - list[0],
+	var minValue = arrayList[0],
+		maxDifference = arrayList[1] - arrayList[0],
 		i;
 	// Create a for loop to compare and update values.
-	for (i = 1; i < list.length; i++) {
+	for (i = 1; i < arrayList.length; i++) {
 		// As you iterate through the loop, declare the current value and differences.
-		var currentValue = list[i], 
+		var currentValue = arrayList[i], 
 			potentialDifference = currentValue - minValue;
 		// Update the lowest value.
 		minValue = Math.min(minValue, currentValue);
