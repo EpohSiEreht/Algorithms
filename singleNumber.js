@@ -1,4 +1,4 @@
-// You are given an array of integers and every element shows up twice except for one.
+// You are given an array of integers and every element shows up twice except for one element that only shows once.
 // Create a function that'll find the lonely number.
 
 // Version 1 - Hash Table

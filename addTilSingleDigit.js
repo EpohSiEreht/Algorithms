@@ -1,8 +1,8 @@
-// Given an non negative integer, add each digit until the result is a single digit number.
+// Given an non negative integer, repeatedly add each digit until the result is a single digit number.
 // Example - 34 -> 3+4=7   return 7
 
 // Version 1 - Recursion
-function single(n) {
+function singleDigit(n) {
 	var result = n.toString().split(''),
 		sum = 0,
 		i;
@@ -18,3 +18,8 @@ function single(n) {
 }
 
 // Version 2
+function singleDigit(n) {
+	var result = n.toString().split(''),
+		sum;
+	if ()
+}
